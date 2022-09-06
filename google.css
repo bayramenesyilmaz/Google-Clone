@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    text-align: end;
+    padding: 1rem;
+    margin-top: 1rem;
+    height: 10vh;
+}
+
+nav a {
+    margin: .5rem;
+    color: gray;
+}
+
+.icon {
+    background-color: rgb(7, 59, 149);
+    padding: 1rem;
+    border-radius: 50rem;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.background {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 38%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+/* GOOGLE LOGO KISMI */
+
+.google {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+.g {
+    color: blue;
+}
+
+.o1 {
+    color: red;
+}
+
+.o2 {
+    color: rgb(255, 230, 2);
+}
+
+.l {
+    color: rgb(47, 182, 47);
+}
+
+/* GOOGLE ARAMA ÇUBUĞU */
+.search {
+    position: relative;
+    width: 100%;
+}
+
+.search input {
+
+    width: 100%;
+    padding: 1rem 5rem 1rem 3rem;
+    border-radius: 5rem;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.search i {
+    position: absolute;
+    color: gray;
+    cursor: pointer;
+}
+
+.s {
+    top: 1rem;
+    left: 1rem;
+}
+
+.m {
+    right: 1rem;
+    top: 1rem;
+}
+
+.k {
+    right: 3.5rem;
+    top: 1rem;
+}
+
+.butonlar {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    padding: .5rem;
+    border-radius: .3rem;
+    border: none;
+    font-size: 1.1rem;
+    margin: .5rem;
+    cursor: pointer;
+    background-color: rgb(241, 239, 239);
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    font-size: .9rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    font-size: .8rem;
+    height: 10vh;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+footer ul li{
+    margin: 0 1rem;
+    color: rgb(89, 89, 89);
+}
+
+@media (min-width:901px) {
+    .main {
+        width: 40%;
+        height: 35vh;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    button {
+        font-size: .8rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width:577px) and (max-width:900px) {
+    .main {
+        width: 73%;
+        height: 35vh;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+}
+
+@media (min-width:377px) and (max-width:576px) {
+    .main {
+        width: 90%;
+        height: 35vh;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    button {
+        font-size: .8rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:376px) {
+    .main {
+        width: 90%;
+        height: 45vh;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    button {
+        font-size: .8rem;
+    }
+
+    p {
+        font-size: .7rem;
+    }
+}
